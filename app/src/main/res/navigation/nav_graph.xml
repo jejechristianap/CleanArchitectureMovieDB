@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jejec.mymoviedb.presentation.home.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/popularFragment"
+        android:name="com.jejec.mymoviedb.presentation.popular.PopularFragment"
+        android:label="PopularFragment">
+        <action
+            android:id="@+id/action_popularFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.jejec.mymoviedb.presentation.favorite.FavoriteFragment"
+        android:label="FavoriteFragment">
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.jejec.mymoviedb.presentation.location.LocationFragment"
+        android:label="LocationFragment" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.jejec.mymoviedb.presentation.detail.DetailFragment"
+        android:label="DetailFragment">
+        <argument
+            android:name="movie"
+            app:argType="com.jejec.mymoviedb.domain.model.Movie" />
+    </fragment>
+</navigation>

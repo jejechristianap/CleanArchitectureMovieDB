@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Movie DB</string>
+    <string name="home">Home</string>
+    <string name="popular">Popular</string>
+    <string name="favorite">Favorite</string>
+    <string name="location">Location</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="dummy_desc">Eighteen months after outwitting the FBI, the fugitive Four Horsemen – J. Daniel Atlas, Merritt McKinney, Jack Wilder, and new member Lula May – await orders from the Eye, the secret society of magicians. The Horsemen’s handler, FBI Special Agent Dylan Rhodes, delivers their instructions: the Horsemen are to expose corrupt tech CEO Owen Case, whose latest cell phone will secretly collect users’ personal data to sell on the black market. In New York City, the Horsemen hijack the phone’s launch, but are interrupted by a mysterious figure who reveals to the public that Jack faked his death, and that Dylan is working with the Horsemen. Dylan eludes the FBI as the Horsemen escape down a construction chute only to find themselves in Macau.</string>
+    <string name="your_current_location">Your current location</string>
+    <string name="latitude">Latitude: %1$s</string>
+    <string name="longitude">Longitude: %1$s</string>
+    <string name="showing_result_of"><![CDATA[<font color=#B3FFFFFF>Showing result of <b><font color=#FFFFFFFF>\'%1$s\'</b>]]></string>
+    <string name="search">Search</string>
+    <string name="cast">Cast</string>
+</resources>
