@@ -16,6 +16,7 @@
         android:drawablePadding="5dp"
         android:hint="@string/search"
         android:imeOptions="actionDone"
+        android:inputType="textPersonName"
         android:paddingHorizontal="10dp"
         android:textColor="@color/white_flow"
         android:textColorHint="@color/white_flow"
@@ -23,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_favorite"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
