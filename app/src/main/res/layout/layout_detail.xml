@@ -10,6 +10,7 @@
         android:layout_height="563dp"
         android:adjustViewBounds="true"
         android:background="@color/white"
+        android:contentDescription="@string/movie_poster"
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,7 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="9dp"
-        android:text="Movie"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -50,6 +50,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
+        android:contentDescription="@string/movie_poster"
         android:src="@drawable/ic_hd"
         app:layout_constraintBottom_toBottomOf="@id/tv_runtime"
         app:layout_constraintStart_toEndOf="@id/tv_runtime"

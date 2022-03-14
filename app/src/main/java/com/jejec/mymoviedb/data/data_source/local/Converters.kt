@@ -8,7 +8,7 @@ import com.jejec.mymoviedb.domain.model.Genre
 class Converters {
 
     @TypeConverter
-    fun listGenreToJson(value: List<Genre>?) = Gson().toJson(value)
+    fun listGenreToJson(value: List<Genre>?): String = Gson().toJson(value)
 
     @TypeConverter
     fun jsonGenreToList(value: String) = Gson().fromJson(value, Array<Genre>::class.java).toList()

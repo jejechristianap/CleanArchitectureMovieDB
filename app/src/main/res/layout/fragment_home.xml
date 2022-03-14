@@ -20,16 +20,17 @@
                 android:layout_height="22.1dp"
                 android:src="@drawable/ic_movie_db"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="TODO" />
 
             <ImageView
-                android:id="@+id/iv_bell"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_marginEnd="19dp"
                 android:src="@drawable/ic_bell"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="TODO" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.MaterialToolbar>
 

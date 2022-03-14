@@ -3,10 +3,7 @@ package com.jejec.mymoviedb.presentation.favorite
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.jejec.mymoviedb.domain.model.FavoriteMovies
-import com.jejec.mymoviedb.domain.model.Movie
 import com.jejec.mymoviedb.domain.use_case.MovieUseCases
-import com.jejec.mymoviedb.presentation.detail.AddFavoriteState
-import com.jejec.mymoviedb.util.InvalidMovieException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
@@ -23,9 +20,6 @@ class FavoriteViewModel @Inject constructor(
     private val _stateMovies = MutableSharedFlow<FavoriteState>()
     val stateMovies = _stateMovies.asSharedFlow()
 
-    private val _addToFavoriteFlow = MutableSharedFlow<AddFavoriteState>()
-    val addToFavoriteFlow = _addToFavoriteFlow.asSharedFlow()
-
     init {
         getMovies()
     }
@@ -33,7 +27,7 @@ class FavoriteViewModel @Inject constructor(
     fun getMovies() = viewModelScope.launch {
         var repeated = 0
         useCases.getMovies.invoke().onEach { movies ->
-            repeated ++
+            repeated++
             movies.map {
 
             }
@@ -47,16 +41,7 @@ class FavoriteViewModel @Inject constructor(
     }
 
     fun addMovie(movie: FavoriteMovies) = viewModelScope.launch {
-        try {
-            useCases.insertMovie.invoke(movie)
-            _addToFavoriteFlow.emit(AddFavoriteState.Added)
-        } catch (e: InvalidMovieException) {
-            _addToFavoriteFlow.emit(
-                AddFavoriteState.Error(
-                    message = e.message ?: "Couldn't add movie"
-                )
-            )
-        }
+        useCases.insertMovie.invoke(movie)
     }
 
     fun delete(movie: FavoriteMovies) = viewModelScope.launch {

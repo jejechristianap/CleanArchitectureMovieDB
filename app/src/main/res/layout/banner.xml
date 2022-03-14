@@ -5,4 +5,5 @@
     android:layout_height="match_parent"
     android:adjustViewBounds="true"
     android:background="@color/white"
+    android:contentDescription="@string/movie_poster"
     android:scaleType="fitXY" />

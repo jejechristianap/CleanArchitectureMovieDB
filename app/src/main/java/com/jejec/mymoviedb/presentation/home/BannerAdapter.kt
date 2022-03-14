@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.github.islamkhsh.CardSliderAdapter
-import com.jejec.mymoviedb.R
 import com.jejec.mymoviedb.databinding.BannerBinding
 import com.jejec.mymoviedb.domain.model.Movie
 import com.jejec.mymoviedb.util.Constant.BASE_URL_IMAGE
@@ -53,7 +52,7 @@ class BannerAdapter : CardSliderAdapter<BannerAdapter.ViewHolder>() {
         }
     }
 
-    class ViewHolder(private val bind: BannerBinding): RecyclerView.ViewHolder(bind.root) {
+    class ViewHolder(private val bind: BannerBinding) : RecyclerView.ViewHolder(bind.root) {
         fun binding(item: Movie) {
             Glide.with(itemView.context)
                 .load("$BASE_URL_IMAGE${item.backdropPath}")

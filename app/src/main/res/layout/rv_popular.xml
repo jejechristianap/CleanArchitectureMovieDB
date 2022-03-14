@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white_flow"
+            android:contentDescription="@string/movie_poster"
             android:scaleType="centerCrop" />
     </androidx.cardview.widget.CardView>
 
@@ -31,8 +32,8 @@
         android:maxLines="1"
         android:textColor="@color/white_flow"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@id/cv_poster"
         app:layout_constraintEnd_toEndOf="@id/cv_poster"
+        app:layout_constraintStart_toStartOf="@id/cv_poster"
         app:layout_constraintTop_toBottomOf="@id/cv_poster" />
 
     <TextView
@@ -43,8 +44,8 @@
         android:maxLines="2"
         android:textColor="@color/whisper"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@id/cv_poster"
         app:layout_constraintEnd_toEndOf="@id/cv_poster"
+        app:layout_constraintStart_toStartOf="@id/cv_poster"
         app:layout_constraintTop_toBottomOf="@id/tv_title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,4 +15,5 @@
     <string name="showing_result_of"><![CDATA[<font color=#B3FFFFFF>Showing result of <b><font color=#FFFFFFFF>\'%1$s\'</b>]]></string>
     <string name="search">Search</string>
     <string name="cast">Cast</string>
+    <string name="movie_poster">Movie Poster</string>
 </resources>

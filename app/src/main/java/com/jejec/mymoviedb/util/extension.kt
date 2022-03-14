@@ -42,15 +42,6 @@ fun View.snackWithAction(message: String, indefinite: Boolean = false, f: Snackb
     snack.show()
 }
 
-fun Skeleton.initSkeleton(context: Context) {
-    this.apply {
-        showShimmer = true
-        shimmerColor = ContextCompat.getColor(context, R.color.white_flow)
-        maskColor = ContextCompat.getColor(context, R.color.observatory)
-        maskCornerRadius = 0f
-    }
-}
-
 fun String.formatDate(): String? {
     try {
         val input = SimpleDateFormat(DATE_FORMAT, Locale.getDefault())
@@ -64,8 +55,4 @@ fun String.formatDate(): String? {
     }
 
     return ""
-}
-
-fun getColoredSpanned(text: String, color: String): String {
-    return "<font color=$color>$text</font>"
 }

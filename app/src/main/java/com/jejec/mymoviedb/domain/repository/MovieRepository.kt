@@ -4,7 +4,6 @@ import com.jejec.mymoviedb.data.data_source.remote.Resource
 import com.jejec.mymoviedb.data.data_source.remote.response.DetailMovieResponse
 import com.jejec.mymoviedb.data.data_source.remote.response.MovieResponse
 import com.jejec.mymoviedb.domain.model.FavoriteMovies
-import com.jejec.mymoviedb.domain.model.Movie
 import kotlinx.coroutines.flow.Flow
 
 interface MovieRepository {

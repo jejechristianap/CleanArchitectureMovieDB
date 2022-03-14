@@ -12,7 +12,6 @@ import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.faltenreich.skeletonlayout.Skeleton
 import com.grzegorzojdana.spacingitemdecoration.Spacing
 import com.grzegorzojdana.spacingitemdecoration.SpacingItemDecoration
 import com.jejec.mymoviedb.MainActivity
@@ -39,12 +38,6 @@ class HomeFragment : Fragment() {
     private var movieResponse: MovieResponse? = null
 
     private var popularMovies: List<Movie>? = null
-
-    private lateinit var bannerSkeleton: Skeleton
-
-    private lateinit var popularSkeleton: Skeleton
-
-    private lateinit var comingSoonSkeleton: Skeleton
 
     private val bannerAdapter = BannerAdapter()
 
