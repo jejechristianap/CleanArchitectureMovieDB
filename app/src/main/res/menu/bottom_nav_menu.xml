@@ -16,4 +16,8 @@
         android:id="@+id/locationFragment"
         android:icon="@drawable/ic_location"
         android:title="@string/location" />
+    <item
+        android:id="@+id/signaturePadFragment"
+        android:icon="@drawable/ic_location"
+        android:title="@string/location" />
 </menu>

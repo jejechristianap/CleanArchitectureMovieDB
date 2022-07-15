@@ -39,4 +39,8 @@
             android:name="movie"
             app:argType="com.jejec.mymoviedb.domain.model.Movie" />
     </fragment>
+    <fragment
+        android:id="@+id/signaturePadFragment"
+        android:name="com.jejec.mymoviedb.presentation.SignaturePadFragment"
+        android:label="SignaturePadFragment" />
 </navigation>
